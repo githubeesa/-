@@ -1,8 +1,7 @@
 # Free static hosting on GitHub Pages. Repo Settings -> Pages -> Source: "GitHub Actions".
 name: Deploy to GitHub Pages
 on:
-  push:
-    branches: [main]
+  # Live site is served from the gh-pages branch; run this manually only if Pages is switched to GitHub Actions.
   workflow_dispatch:
 permissions:
   contents: read
