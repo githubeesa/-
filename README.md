@@ -3,7 +3,7 @@
 **Verified blood requests for India that disappear when the need does.**
 Built on [Arkiv](https://arkiv.network), the Web3 database · Tiramisu testnet · no backend · MIT.
 
-> **Live app:** https://githubeesa.github.io/rakt-relay/
+> **Live app:** https://githubeesa.github.io/-/
 > **Demo video (≤ 3 min):** `<link>` · **Schema:** [`arkiv/schema.md`](arkiv/schema.md) · **Friction report:** [`arkiv/friction.md`](arkiv/friction.md)
 > Track: **Best Indian Use Case** · All data in this demo is **synthetic**.
 
