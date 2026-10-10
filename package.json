@@ -1,0 +1,32 @@
+{
+  "name": "rakt-relay",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Verified, self-expiring blood requests for India, built on Arkiv (the Web3 database).",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "tsx --test test/*.test.ts",
+    "wallets": "tsx scripts/wallets.ts",
+    "seed": "tsx scripts/seed.ts",
+    "smoke:read": "tsx scripts/smoke-read.ts",
+    "smoke:write-dry": "tsx scripts/dry-run-write.ts",
+    "smoke:simulate": "tsx scripts/simulate-writes.ts",
+    "smoke:ws": "tsx scripts/ws-probe.ts",
+    "evidence": "tsx scripts/evidence.ts"
+  },
+  "dependencies": {
+    "@arkiv-network/sdk": "~0.8.1",
+    "viem": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "dotenv": "^16.4.5",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vite": "^6.0.0"
+  }
+}
