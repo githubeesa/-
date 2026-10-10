@@ -1,0 +1,113 @@
+{
+  "note": "Public evidence written by `npm run seed`. Addresses and keys only, never private keys. All data synthetic.",
+  "network": {
+    "name": "Tiramisu",
+    "chainId": 7738577,
+    "explorer": "https://tiramisu.explorer.arkiv.network"
+  },
+  "stewards": [
+    "0x386ECeD7c9b9516e034fe9ECfaDB85A19b4b1F88"
+  ],
+  "hospitals": [
+    {
+      "name": "Sanjeevani Demo Hospital (synthetic)",
+      "wallet": "0x70EFA1f9cE5E1Cc3ca29Faec5f3EB51706009490",
+      "attestation": "0x74a8c58db1acef92190365af18b52f78ab7f660bbea4c88100b3e303ba38a3e3"
+    },
+    {
+      "name": "Namma Demo Medical College (synthetic)",
+      "wallet": "0x4bC5E5512008C84448bA2cb7F737f29be1871a9d",
+      "attestation": "0x369b899ab6d2564bd9ccb99745f6331a69b2113fbbfd2fd5faf858cb04ab4c71"
+    }
+  ],
+  "donors": [
+    {
+      "role": "demo donor",
+      "wallet": "0xB234522eadFbB142D84e537b0098BD105b5fE8Af"
+    }
+  ],
+  "imposters": [
+    {
+      "role": "scam look-alike, must NOT appear in the app",
+      "wallet": "0x888f7322A3bf3500FAD7eca41805C80e00C286ef",
+      "fakeRequest": "0xe1e0334275654a227b254b92fd783a30616c36695f9de82e3d22d0023679bf3f"
+    }
+  ],
+  "demoLinks": {
+    "oNegRequest": "0x6e86b5e715476163ab76fd8431ce8cf936eca2ed1b1473bc1edc193c6d5cfc55",
+    "fakeRequest": "0xe1e0334275654a227b254b92fd783a30616c36695f9de82e3d22d0023679bf3f",
+    "receipt": "0x97e64b14793fab83f4777e75932e51b25eeda3daf5b532cc27a5aa65e9f64c2d"
+  },
+  "evidence": [
+    {
+      "step": "steward attests 2 blood centres (batch, readonly)",
+      "tx": "0x8e29e10c3157d0fe3303705ff51834c07fe6dd3adda8f5e972b2d0f66e665d82",
+      "keys": [
+        "0x74a8c58db1acef92190365af18b52f78ab7f660bbea4c88100b3e303ba38a3e3",
+        "0x369b899ab6d2564bd9ccb99745f6331a69b2113fbbfd2fd5faf858cb04ab4c71"
+      ]
+    },
+    {
+      "step": "hospital 1 publishes 3 requests (batch)",
+      "tx": "0x8e7b4b6e6d74d3c24a01d411ea59698eac7bee5c553183fa91a7b26534b520d9",
+      "keys": [
+        "0x6e86b5e715476163ab76fd8431ce8cf936eca2ed1b1473bc1edc193c6d5cfc55",
+        "0x743e435d11cea1b1ec01d00f5a958b704625209d29300c5a62c59869070f006b",
+        "0x72ddf9b1b1e399fd84f0d438b472aa76bafca0b526afcf0dfd96720bb4bb2392"
+      ]
+    },
+    {
+      "step": "hospital 2 publishes 4 requests (batch)",
+      "tx": "0x25f8d6b3d7e5acbb7204c536155f4fd229a27f14f07f817f7fb58e01357a3d38",
+      "keys": [
+        "0xe72f00c0e2280cc6a0e291be60bfed157d1e77510fea806a7f738955976278a1",
+        "0xb7675ae48aa08c9719c4c6a92208fa49b96546879cbe5d0809cfcf55ef2acd19",
+        "0x4cdcb071d9a2f0c41ac2cd251157373e74ed16bd16aeedc7be2e758306a08cad",
+        "0x458e54569187a0dfe6d5b834553b3a601160129d3c65cc4b930b8aae8d56e129"
+      ]
+    },
+    {
+      "step": "IMPOSTER posts a look-alike request (must be rejected by the app)",
+      "tx": "0x878855fd143477eea9353446ab06b515a2ac94a04230c023e14c7d6219028d64",
+      "keys": [
+        "0xe1e0334275654a227b254b92fd783a30616c36695f9de82e3d22d0023679bf3f"
+      ]
+    },
+    {
+      "step": "donor pledges to O- request",
+      "tx": "0xd344ea46b02573b4bd86c19da6117d00bb22f26e1f4cf7cf40a7ec440971710d",
+      "keys": [
+        "0x690a317a5cc957c35486fc01530e59931e4113e3a75dacebc7cfc05fc1e36c75"
+      ]
+    },
+    {
+      "step": "donor pledges to O+ request",
+      "tx": "0xd69d601bb1ac1be273cc7454627bcfd2e695a3791ae63c769d528c945b619428",
+      "keys": [
+        "0xb4cc00512c85a3ae723d29bf2ce08d4d9c44700c421223d49028cefee5aa05c1"
+      ]
+    },
+    {
+      "step": "hospital 1 confirms donation: receipt + units_received + transfer to donor (batch)",
+      "tx": "0x58a027d23876942362408ef0a99c4a11d759c4786fecabb3b24a3f4d0a78c2ee",
+      "keys": [
+        "0x97e64b14793fab83f4777e75932e51b25eeda3daf5b532cc27a5aa65e9f64c2d"
+      ]
+    },
+    {
+      "step": "hospital 2 renews A- request to 72h from now (Lifetime Extension)",
+      "tx": "0xec5a788aa313b850b37d227b68e19b968ddd12821c95f0bca9e52d5c6e9265c8",
+      "keys": [
+        "0x458e54569187a0dfe6d5b834553b3a601160129d3c65cc4b930b8aae8d56e129"
+      ]
+    },
+    {
+      "step": "hospital 2 marks AB- plasma request fulfilled (patch)",
+      "tx": "0x028018a2aa149fbe741b51f7ce2c7febc8786a46248180841cf8162471b49a94",
+      "keys": [
+        "0xb7675ae48aa08c9719c4c6a92208fa49b96546879cbe5d0809cfcf55ef2acd19"
+      ]
+    }
+  ],
+  "seededAt": "2026-10-10T11:43:49.012Z"
+}
