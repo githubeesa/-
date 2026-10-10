@@ -10,7 +10,7 @@ Replace every `<…>` before submitting. Never paste private keys, seed phrases,
 
 **Tracks:** ✅ Best Indian Use Case. Optionally also ✅ Security (the app trusts only `$creator`, never a writable field). You can enter several tracks but win at most one prize, and Best Indian Use Case is allocated first.
 
-**Links:** repo `https://github.com/githubeesa/rakt-relay` · demo video `<YouTube unlisted / Loom / Drive link>` · live app `https://githubeesa.github.io/rakt-relay/`
+**Links:** repo `https://github.com/githubeesa/-` · demo video `<YouTube unlisted / Loom / Drive link>` · live app `https://githubeesa.github.io/-/`
 
 **The problem it solves\***
 In India, urgent blood requests spread as WhatsApp forwards and social posts. Three things go wrong. (1) They never die: a request keeps circulating for weeks after the patient got blood, and donors travel for nothing. (2) They carry the family's phone number, which fraudsters harvest to pose as donors and demand "travel money" by UPI (cases flagged by police in Tamil Nadu in 2024 and Kerala in 2025). (3) A fake request looks exactly like a real one.
@@ -33,7 +33,7 @@ Donor screens are in English, Hindi and Kannada. It is a static site with no bac
 
 ## Arkiv questions
 
-**1. Live app URL\*:** `https://githubeesa.github.io/rakt-relay/`
+**1. Live app URL\*:** `https://githubeesa.github.io/-/`
 
 **2. Does any team member hold Indian nationality?\*:** Yes (Junaid Mmd).
 
@@ -60,7 +60,7 @@ Deliberately off Arkiv: patient identity, phone numbers, diagnoses, donor identi
 - **Batch writes** (`confirmDonation`): one `executeBatch` that creates the receipt with a predicted key and pinned salt, patches `units_received`/`status`, and transfers the receipt to the donor. All three land or none do. Stewards also attest centres in one batch.
 - **WebSocket events** ([main.ts](<repo>/blob/main/src/web/main.ts) `startLive`): `watchEntityEvents` over `webSocket()` without `fromBlock`. The hospital desk shows a pledge the moment it lands.
 
-**5. Friction report link\*:** `https://github.com/githubeesa/rakt-relay/blob/main/arkiv/friction.md`
+**5. Friction report link\*:** `https://github.com/githubeesa/-/blob/main/arkiv/friction.md`
 
 **6. Wallet addresses that create your Arkiv entities\*:** (from `src/deployment.json` after `npm run seed`)
 - Steward (attests blood centres): `0x…`
@@ -69,7 +69,7 @@ Deliberately off Arkiv: patient identity, phone numbers, diagnoses, donor identi
 - Demo donor (pledges, owns a receipt): `0x…`
 - Imposter (posts a look-alike scam request the app must reject): `0x…`
 
-**7. Link to schema.md\*:** `https://github.com/githubeesa/rakt-relay/blob/main/arkiv/schema.md`
+**7. Link to schema.md\*:** `https://github.com/githubeesa/-/blob/main/arkiv/schema.md`
 
 **8. How can judges reproduce your Arkiv usage?\***
 1. Open the live app and go to *Needed near me*. Choose O-, Bengaluru, 25 km, then Search. Expand "Arkiv query sent by this page" to see the exact query.
